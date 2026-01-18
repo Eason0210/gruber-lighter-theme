@@ -323,7 +323,7 @@
 
    ;; Org Mode
    `(org-agenda-done ((t (:foreground ,gruber-light-green))))
-   `(org-agenda-structure ((t (:foreground ,gruber-light-niagara :height 1.1))))
+   `(org-agenda-structure ((t (:foreground ,gruber-light-niagara-2 :height 1.1))))
    `(org-block ((t (:background ,gruber-light-bg+1))))
    `(org-block-begin-line ((t (:foreground ,gruber-light-bg+4 :slant italic))))
    `(org-block-end-line ((t (:foreground ,gruber-light-bg+4 :slant italic))))
