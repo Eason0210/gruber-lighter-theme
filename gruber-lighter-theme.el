@@ -37,31 +37,31 @@
 
 ;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
-(let ((gruber-lighter-fg        "#333333")
-      (gruber-lighter-fg+1      "gray40")
-      (gruber-lighter-fg+2      "gray80")
-      (gruber-lighter-white     "#000000")
-      (gruber-lighter-black     "#ffffff")
-      (gruber-lighter-bg-1      "#e9e9e9")
-      (gruber-lighter-bg        "#ededec")
-      (gruber-lighter-bg+1      "#e0e0e0")
-      (gruber-lighter-bg+2      "#c4c4c7")
-      (gruber-lighter-bg+3      "#b8bcc0")
-      (gruber-lighter-bg+4      "#a8a8a8")
-      (gruber-lighter-wheat     "#fee0b8")
+(let ((gruber-lighter-fg         "#333333")
+      (gruber-lighter-fg+1       "gray40")
+      (gruber-lighter-fg+2       "gray80")
+      (gruber-lighter-white      "#000000")
+      (gruber-lighter-black      "#ffffff")
+      (gruber-lighter-bg-1       "#e9e9e9")
+      (gruber-lighter-bg         "#ededec")
+      (gruber-lighter-bg+1       "#e0e0e0")
+      (gruber-lighter-bg+2       "#c4c4c7")
+      (gruber-lighter-bg+3       "#b8bcc0")
+      (gruber-lighter-bg+4       "#a8a8a8")
+      (gruber-lighter-wheat      "#fee0b8")
       (gruber-lighter-Red-violet "#c73a82") ;; Python decorators or triple string,Here-doc string
-      (gruber-lighter-red-1     "#f43841")
-      (gruber-lighter-red       "#d02324")
-      (gruber-lighter-red+1     "#aa0000")
-      (gruber-lighter-green     "#008000")
-      (gruber-lighter-yellow    "gold4") ;; #f0ec19
-      (gruber-lighter-orange    "#bb5f0c")
-      (gruber-lighter-brown     "#9b3f22")
-      (gruber-lighter-quartz    "#586e64") ;; #7b8c84
-      (gruber-lighter-niagara-2 "#326699")
-      (gruber-lighter-niagara-1 "#5b5bb5")
-      (gruber-lighter-niagara   "#3333b4") ;; #037581 built-in keyword
-      (gruber-lighter-wisteria  "#746b99")
+      (gruber-lighter-red-1      "#f43841")
+      (gruber-lighter-red        "#d02324")
+      (gruber-lighter-red+1      "#aa0000")
+      (gruber-lighter-green      "#008000")
+      (gruber-lighter-yellow     "gold4") ;; #f0ec19
+      (gruber-lighter-orange     "#bb5f0c")
+      (gruber-lighter-brown      "#9b3f22")
+      (gruber-lighter-quartz     "#586e64") ;; #7b8c84
+      (gruber-lighter-niagara-2  "#326699")
+      (gruber-lighter-niagara-1  "#5b5bb5")
+      (gruber-lighter-niagara    "#3333b4") ;; #037581 built-in keyword
+      (gruber-lighter-wisteria   "#746b99")
       )
   (custom-theme-set-variables
    'gruber-lighter
