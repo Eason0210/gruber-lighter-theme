@@ -48,9 +48,9 @@
       (gruber-light-bg+2      "#c4c4c7")
       (gruber-light-bg+3      "#b8bcc0")
       (gruber-light-bg+4      "#a8a8a8")
-      (gruber-light-red-1     "#c73c3f")
-      (gruber-light-red       "#f43841")
-      (gruber-light-red+1     "#ff4f58") ;; #c63981 H-doc string
+      (gruber-light-red-1     "#f43841")
+      (gruber-light-red       "#d02324")
+      (gruber-light-red+1     "#aa0000") ;; python decorators, #c73a82 triple string, #c63981 H-doc string,
       (gruber-light-green     "#008000")
       (gruber-light-yellow-1  "#fffb1a")
       (gruber-light-yellow    "gold4") ;; #f0ec19
