@@ -59,7 +59,7 @@
       (gruber-lighter-niagara-2 "#326699")
       (gruber-lighter-niagara-1 "#4d4c80")
       (gruber-lighter-niagara   "#3333b4") ;; #037581 built-in keyword
-      (gruber-lighter-wisteria  "#9e95c7")
+      (gruber-lighter-wisteria  "#746b99")
       )
   (custom-theme-set-variables
    'gruber-lighter
