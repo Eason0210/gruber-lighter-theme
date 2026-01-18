@@ -57,10 +57,11 @@
       (gruber-lighter-yellow     "gold4") ;; #f0ec19
       (gruber-lighter-orange     "#bb5f0c")
       (gruber-lighter-brown      "#9b3f22")
-      (gruber-lighter-quartz     "#586e64") ;; #7b8c84
+      (gruber-lighter-quartz     "#586e64")
+      (gruber-lighter-quartz+1   "#037581")
       (gruber-lighter-niagara-2  "#326699")
       (gruber-lighter-niagara-1  "#5b5bb5")
-      (gruber-lighter-niagara    "#3333b4") ;; #037581 built-in keyword
+      (gruber-lighter-niagara    "#3333b4")
       (gruber-lighter-wisteria   "#746b99")
       )
   (custom-theme-set-variables
@@ -188,7 +189,7 @@
    `(font-lock-preprocessor-face ((t (:foreground ,gruber-lighter-quartz))))
    `(font-lock-reference-face ((t (:foreground ,gruber-lighter-quartz))))
    `(font-lock-string-face ((t (:foreground ,gruber-lighter-green))))
-   `(font-lock-type-face ((t (:foreground ,gruber-lighter-quartz))))
+   `(font-lock-type-face ((t (:foreground ,gruber-lighter-quartz+1))))
    `(font-lock-variable-name-face ((t (:foreground ,gruber-lighter-fg+1))))
    `(font-lock-warning-face ((t (:foreground ,gruber-lighter-red))))
 
