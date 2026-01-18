@@ -58,7 +58,7 @@
       (gruber-lighter-orange     "#bb5f0c")
       (gruber-lighter-brown      "#9b3f22")
       (gruber-lighter-quartz     "#586e64")
-      (gruber-lighter-quartz+1   "#037581")
+      (gruber-lighter-quartz+1   "#017682")
       (gruber-lighter-niagara-2  "#326699")
       (gruber-lighter-niagara-1  "#5b5bb5")
       (gruber-lighter-niagara    "#3333b4")
