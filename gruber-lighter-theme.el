@@ -40,8 +40,8 @@
 (let ((gruber-lighter-fg         "#333333")
       (gruber-lighter-fg+1       "gray40")
       (gruber-lighter-fg+2       "gray80")
-      (gruber-lighter-white      "#000000")
-      (gruber-lighter-black      "#ffffff")
+      (gruber-lighter-white      "#ffffff")
+      (gruber-lighter-black      "#000000")
       (gruber-lighter-bg-1       "#e9e9e9")
       (gruber-lighter-bg         "#ededec")
       (gruber-lighter-bg+1       "#e0e0e0")
@@ -106,10 +106,10 @@
    `(region ((t (:background ,gruber-lighter-bg+3 :foreground unspecified))))
    `(secondary-selection ((t ,(list :background gruber-lighter-bg+3
                                     :foreground 'unspecified))))
-   `(trailing-whitespace ((t ,(list :foreground gruber-lighter-black
+   `(trailing-whitespace ((t ,(list :foreground gruber-lighter-white
                                     :background gruber-lighter-red))))
    `(tooltip ((t ,(list :background gruber-lighter-bg+4
-                        :foreground gruber-lighter-white))))
+                        :foreground gruber-lighter-black))))
    `(error ((t (:foreground ,gruber-lighter-red+1))))
 
    ;; Calendar
@@ -311,9 +311,9 @@
 
    ;; Mode Line
    `(mode-line ((t ,(list :background gruber-lighter-bg+1
-                          :foreground gruber-lighter-white))))
+                          :foreground gruber-lighter-black))))
    `(mode-line-buffer-id ((t ,(list :background gruber-lighter-bg+1
-                                    :foreground gruber-lighter-white))))
+                                    :foreground gruber-lighter-black))))
    `(mode-line-inactive ((t ,(list :background gruber-lighter-bg+1
                                    :foreground gruber-lighter-quartz))))
    ;; header-line
@@ -341,9 +341,9 @@
    `(org-table ((t (:foreground ,gruber-lighter-wisteria))))
 
    ;; Search
-   `(isearch ((t ,(list :foreground gruber-lighter-black
+   `(isearch ((t ,(list :foreground gruber-lighter-white
                         :background gruber-lighter-wheat))))
-   `(isearch-fail ((t ,(list :foreground gruber-lighter-black
+   `(isearch-fail ((t ,(list :foreground gruber-lighter-white
                              :background gruber-lighter-red))))
    `(lazy-highlight ((t ,(list
                           :foreground gruber-lighter-fg+2
@@ -408,7 +408,7 @@
    `(term-color-yellow ((t (:foreground ,gruber-lighter-yellow :background ,gruber-lighter-yellow))))
    `(term-color-magenta ((t (:foreground ,gruber-lighter-wisteria :background ,gruber-lighter-wisteria))))
    `(term-color-cyan ((t (:foreground ,gruber-lighter-quartz :background ,gruber-lighter-quartz))))
-   `(term-color-white ((t (:foreground ,gruber-lighter-fg :background ,gruber-lighter-white))))
+   `(term-color-white ((t (:foreground ,gruber-lighter-fg :background ,gruber-lighter-black))))
 
    ;; ansi-color (built-in)
    `(ansi-color-black ((t (:foreground ,gruber-lighter-bg+3 :background ,gruber-lighter-bg+4))))
@@ -418,7 +418,7 @@
    `(ansi-color-yellow ((t (:foreground ,gruber-lighter-yellow :background ,gruber-lighter-yellow))))
    `(ansi-color-magenta ((t (:foreground ,gruber-lighter-wisteria :background ,gruber-lighter-wisteria))))
    `(ansi-color-cyan ((t (:foreground ,gruber-lighter-quartz :background ,gruber-lighter-quartz))))
-   `(ansi-color-white ((t (:foreground ,gruber-lighter-fg :background ,gruber-lighter-white))))
+   `(ansi-color-white ((t (:foreground ,gruber-lighter-fg :background ,gruber-lighter-black))))
    `(ansi-color-bright-black ((t (:inherit ansi-color-black :weight bold))))
    `(ansi-color-bright-red ((t (:inherit ansi-color-red :weight bold))))
    `(ansi-color-bright-green ((t (:inherit ansi-color-green :weight bold))))
