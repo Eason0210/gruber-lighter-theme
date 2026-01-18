@@ -52,7 +52,6 @@
       (gruber-lighter-red       "#d02324")
       (gruber-lighter-red+1     "#aa0000") ;; python decorators, #c73a82 triple string, #c63981 H-doc string,
       (gruber-lighter-green     "#008000")
-      (gruber-lighter-yellow-1  "#fffb1a")
       (gruber-lighter-yellow    "gold4") ;; #f0ec19
       (gruber-lighter-orange    "#bb5f0c")
       (gruber-lighter-brown     "#9b3f22")
