@@ -29,7 +29,7 @@
 ;;; Commentary:
 ;;
 ;; Gruber Light color theme for Emacs is light variant of the Gruber Light
-;; theme for BBEdit by John Gruber. Adapted for deftheme.
+;; theme for BBEdit by John Gruber. Adapted for deftheme and extended by Eason.
 
 
 (deftheme gruber-light
@@ -37,34 +37,35 @@
 
 ;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
-(let ((gruber-light-fg        "#e4e4ef")
-      (gruber-light-fg+1      "#f4f4ff")
-      (gruber-light-fg+2      "#f5f5f5")
-      (gruber-light-white     "#ffffff")
-      (gruber-light-black     "#000000")
-      (gruber-light-bg-1      "#101010")
-      (gruber-light-bg        "#181818")
-      (gruber-light-bg+1      "#282828")
-      (gruber-light-bg+2      "#453d41")
-      (gruber-light-bg+3      "#484848")
-      (gruber-light-bg+4      "#52494e")
+(let ((gruber-light-fg        "#000000")
+      (gruber-light-fg+1      "gray40")
+      (gruber-light-fg+2      "gray80")
+      (gruber-light-white     "#000000")
+      (gruber-light-black     "#ffffff")
+      (gruber-light-bg-1      "#e9e9e9")
+      (gruber-light-bg        "#ededec")
+      (gruber-light-bg+1      "#e0e0e0")
+      (gruber-light-bg+2      "#c4c4c7")
+      (gruber-light-bg+3      "#b8bcc0")
+      (gruber-light-bg+4      "#a8a8a8")
       (gruber-light-red-1     "#c73c3f")
       (gruber-light-red       "#f43841")
-      (gruber-light-red+1     "#ff4f58")
-      (gruber-light-green     "#73c936")
-      (gruber-light-yellow-1  "#C7C256")
-      (gruber-light-yellow    "#ffdd33")
-      (gruber-light-orange    "#F57F29")
-      (gruber-light-brown     "#cc8c3c")
-      (gruber-light-quartz    "#95a99f")
-      (gruber-light-niagara-2 "#303540")
-      (gruber-light-niagara-1 "#565f73")
-      (gruber-light-niagara   "#96a6c8")
+      (gruber-light-red+1     "#ff4f58") ;; #c63981 H-doc string
+      (gruber-light-green     "#008000")
+      (gruber-light-yellow-1  "#fffb1a")
+      (gruber-light-yellow    "gold4")
+      ;; (gruber-light-yellow    "#f0ec19")
+      (gruber-light-orange    "#bb5f0c")
+      (gruber-light-brown     "#9b3f22")
+      (gruber-light-quartz    "#7b8c84")
+      (gruber-light-niagara-2 "#326699")
+      (gruber-light-niagara-1 "#4d4c80")
+      (gruber-light-niagara   "#3333b4") ;; #037581 built-in keyword
       (gruber-light-wisteria  "#9e95c7")
       )
   (custom-theme-set-variables
    'gruber-light
-   '(frame-background-mode (quote dark)))
+   '(frame-background-mode (quote light)))
 
   (custom-theme-set-faces
    'gruber-light
@@ -91,10 +92,10 @@
    ;; Basic Coloring (or Uncategorized)
    `(border ((t ,(list :background gruber-light-bg-1
                        :foreground gruber-light-bg+2))))
-   `(cursor ((t (:background ,gruber-light-yellow))))
+   `(cursor ((t (:background ,gruber-light-niagara))))
    `(default ((t ,(list :foreground gruber-light-fg
                         :background gruber-light-bg))))
-   `(fringe ((t ,(list :background nil
+   `(fringe ((t ,(list :background 'unspecified
                        :foreground gruber-light-bg+2))))
    `(vertical-border ((t ,(list :foreground gruber-light-bg+2))))
    `(link ((t (:foreground ,gruber-light-niagara :underline t))))
@@ -102,9 +103,9 @@
    `(match ((t (:background ,gruber-light-bg+4))))
    `(shadow ((t (:foreground ,gruber-light-bg+4))))
    `(minibuffer-prompt ((t (:foreground ,gruber-light-niagara))))
-   `(region ((t (:background ,gruber-light-bg+3 :foreground nil))))
+   `(region ((t (:background ,gruber-light-bg+3 :foreground unspecified))))
    `(secondary-selection ((t ,(list :background gruber-light-bg+3
-                                    :foreground nil))))
+                                    :foreground 'unspecified))))
    `(trailing-whitespace ((t ,(list :foreground gruber-light-black
                                     :background gruber-light-red))))
    `(tooltip ((t ,(list :background gruber-light-bg+4
@@ -136,9 +137,9 @@
 
    ;; Diff
    `(diff-removed ((t ,(list :foreground gruber-light-red+1
-                             :background nil))))
+                             :background 'unspecified))))
    `(diff-added ((t ,(list :foreground gruber-light-green
-                           :background nil))))
+                           :background 'unspecified))))
 
    ;; Dired
    `(dired-directory ((t (:foreground ,gruber-light-niagara :weight bold))))
@@ -176,23 +177,18 @@
    `(eshell-ls-symlink ((t (:foreground ,gruber-light-yellow))))
 
    ;; Font Lock
-   ;; `(font-lock-builtin-face ((t (:foreground ,gruber-light-yellow))))
-   `(font-lock-builtin-face ((t (:foreground "#1286A1"))))
+   `(font-lock-builtin-face ((t (:foreground ,gruber-light-niagara))))
    `(font-lock-comment-face ((t (:foreground ,gruber-light-brown))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,gruber-light-brown))))
    `(font-lock-constant-face ((t (:foreground ,gruber-light-quartz))))
-   ;; `(font-lock-doc-face ((t (:foreground ,gruber-light-green))))
-   `(font-lock-doc-face ((t (:foreground "#97D9FF"))))
+   `(font-lock-doc-face ((t (:foreground ,gruber-light-green))))
    `(font-lock-doc-string-face ((t (:foreground ,gruber-light-green))))
-   `(font-lock-function-name-face ((t (:foreground ,gruber-light-fg+1))))
-   ;; `(font-lock-function-name-face ((t (:foreground ,gruber-light-niagara))))
-   ;; `(font-lock-keyword-face ((t (:foreground ,gruber-light-yellow :bold t))))
-   `(font-lock-keyword-face ((t (:foreground ,gruber-light-niagara))))
-   `(font-lock-preprocessor-face ((t (:foreground "#5E92E0"))))
+   `(font-lock-function-name-face ((t (:foreground ,gruber-light-niagara-2))))
+   `(font-lock-keyword-face ((t (:foreground ,gruber-light-niagara :bold t))))
+   `(font-lock-preprocessor-face ((t (:foreground ,gruber-light-quartz))))
    `(font-lock-reference-face ((t (:foreground ,gruber-light-quartz))))
    `(font-lock-string-face ((t (:foreground ,gruber-light-green))))
-   `(font-lock-number-face ((t (:foreground ,gruber-light-orange))))
-   `(font-lock-type-face ((t (:foreground ,gruber-light-niagara))))
+   `(font-lock-type-face ((t (:foreground ,gruber-light-quartz))))
    `(font-lock-variable-name-face ((t (:foreground ,gruber-light-fg+1))))
    `(font-lock-warning-face ((t (:foreground ,gruber-light-red))))
 
@@ -276,9 +272,9 @@
    `(jabber-activity-personal-face ((t (:foreground ,gruber-light-yellow :bold t))))
 
    ;; Line Highlighting
-   `(highlight ((t (:background ,gruber-light-bg+1 :foreground nil))))
+   `(highlight ((t (:background ,gruber-light-bg+1 :foreground unspecified))))
    `(highlight-current-line-face ((t ,(list :background gruber-light-bg+1
-                                            :foreground nil))))
+                                            :foreground 'unspecified))))
 
    ;; line numbers
    `(line-number ((t (:inherit default :foreground ,gruber-light-bg+4))))
@@ -289,8 +285,8 @@
                       :background gruber-light-bg))))
 
    ;; Magit
-   `(magit-branch ((t (:foreground ,gruber-light-niagara))))
-   `(magit-branch-local ((t (:foreground ,gruber-light-niagara))))
+   `(magit-branch ((t (:foreground ,gruber-light-niagara-2))))
+   `(magit-branch-local ((t (:foreground ,gruber-light-niagara-2))))
    `(magit-branch-remote ((t (:foreground ,gruber-light-green))))
    `(magit-diff-hunk-header ((t (:background ,gruber-light-bg+2))))
    `(magit-diff-file-header ((t (:background ,gruber-light-bg+4))))
@@ -401,8 +397,8 @@
 
    ;; tab-bar
    `(tab-bar ((t (:background ,gruber-light-bg+1 :foreground ,gruber-light-bg+4))))
-   `(tab-bar-tab ((t (:background nil :foreground ,gruber-light-yellow :weight bold))))
-   `(tab-bar-tab-inactive ((t (:background nil))))
+   `(tab-bar-tab ((t (:background unspecified :foreground ,gruber-light-yellow :weight bold))))
+   `(tab-bar-tab-inactive ((t (:background unspecified))))
 
    ;; vterm / ansi-term
    `(term-color-black ((t (:foreground ,gruber-light-bg+3 :background ,gruber-light-bg+4))))
@@ -413,6 +409,24 @@
    `(term-color-magenta ((t (:foreground ,gruber-light-wisteria :background ,gruber-light-wisteria))))
    `(term-color-cyan ((t (:foreground ,gruber-light-quartz :background ,gruber-light-quartz))))
    `(term-color-white ((t (:foreground ,gruber-light-fg :background ,gruber-light-white))))
+
+   ;; ansi-color (built-in)
+   `(ansi-color-black ((t (:foreground ,gruber-light-bg+3 :background ,gruber-light-bg+4))))
+   `(ansi-color-red ((t (:foreground ,gruber-light-red-1 :background ,gruber-light-red-1))))
+   `(ansi-color-green ((t (:foreground ,gruber-light-green :background ,gruber-light-green))))
+   `(ansi-color-blue ((t (:foreground ,gruber-light-niagara :background ,gruber-light-niagara))))
+   `(ansi-color-yellow ((t (:foreground ,gruber-light-yellow :background ,gruber-light-yellow))))
+   `(ansi-color-magenta ((t (:foreground ,gruber-light-wisteria :background ,gruber-light-wisteria))))
+   `(ansi-color-cyan ((t (:foreground ,gruber-light-quartz :background ,gruber-light-quartz))))
+   `(ansi-color-white ((t (:foreground ,gruber-light-fg :background ,gruber-light-white))))
+   `(ansi-color-bright-black ((t (:inherit ansi-color-black :weight bold))))
+   `(ansi-color-bright-red ((t (:inherit ansi-color-red :weight bold))))
+   `(ansi-color-bright-green ((t (:inherit ansi-color-green :weight bold))))
+   `(ansi-color-bright-yellow ((t (:inherit ansi-color-yellow :weight bold))))
+   `(ansi-color-bright-blue ((t (:inherit ansi-color-blue :weight bold))))
+   `(ansi-color-bright-magenta ((t (:inherit ansi-color-magenta :weight bold))))
+   `(ansi-color-bright-cyan ((t (:inherit ansi-color-cyan :weight bold))))
+   `(ansi-color-bright-white ((t (:inherit ansi-color-white :weight bold))))
 
    ;; company-mode
    `(company-tooltip ((t (:foreground ,gruber-light-fg :background ,gruber-light-bg+1))))
@@ -438,7 +452,7 @@
 
    ;; diff-hl
    `(diff-hl-insert ((t (:inherit diff-added))))
-   `(diff-hl-change ((t (:background nil :foreground ,gruber-light-niagara))))
+   `(diff-hl-change ((t (:background unspecified :foreground ,gruber-light-niagara))))
    `(diff-hl-delete ((t (:inherit diff-removed))))
 
    ;; breadcrumb
@@ -476,7 +490,20 @@
    ;; Outline (built-in)
    `(outline-2 ((t (:foreground ,gruber-light-yellow))))
    `(outline-3 ((t (:foreground ,gruber-light-green))))
-   `(outline-6 ((t (:foreground ,gruber-light-niagara))))
+   `(outline-6 ((t (:foreground ,gruber-light-niagara-2))))
+
+   ;; Rainbow-delimiters (borrowed from `leuven-dark-theme')
+   `(rainbow-delimiters-depth-1-face ((t (:foreground "#938e84"))))
+   `(rainbow-delimiters-depth-2-face ((t (:foreground "#907733"))))
+   `(rainbow-delimiters-depth-3-face ((t (:foreground "#736e84"))))
+   `(rainbow-delimiters-depth-4-face ((t (:foreground "#936797"))))
+   `(rainbow-delimiters-depth-5-face ((t (:foreground "#738c94"))))
+   `(rainbow-delimiters-depth-6-face ((t (:foreground "#a1894f"))))
+   `(rainbow-delimiters-depth-7-face ((t (:foreground "#7e7a87"))))
+   `(rainbow-delimiters-depth-8-face ((t (:foreground "#835787"))))
+   `(rainbow-delimiters-depth-9-face ((t (:foreground "#7b8f97"))))
+   `(rainbow-delimiters-mismatched-face ((t (:underline t :background "#065a64"))))
+   `(rainbow-delimiters-unmatched-face ((t (:underline t :background "#065a64"))))
 
    ))
 
