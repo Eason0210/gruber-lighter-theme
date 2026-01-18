@@ -48,6 +48,7 @@
       (gruber-lighter-bg+2      "#c4c4c7")
       (gruber-lighter-bg+3      "#b8bcc0")
       (gruber-lighter-bg+4      "#a8a8a8")
+      (gruber-lighter-wheat     "#fee0b8")
       (gruber-lighter-red-1     "#f43841")
       (gruber-lighter-red       "#d02324")
       (gruber-lighter-red+1     "#aa0000") ;; python decorators, #c73a82 triple string, #c63981 H-doc string,
@@ -340,12 +341,12 @@
 
    ;; Search
    `(isearch ((t ,(list :foreground gruber-lighter-black
-                        :background gruber-lighter-fg+2))))
+                        :background gruber-lighter-wheat))))
    `(isearch-fail ((t ,(list :foreground gruber-lighter-black
                              :background gruber-lighter-red))))
-   `(isearch-lazy-highlight-face ((t ,(list
-                                       :foreground gruber-lighter-fg+1
-                                       :background gruber-lighter-niagara-1))))
+   `(lazy-highlight ((t ,(list
+                          :foreground gruber-lighter-fg+2
+                          :background gruber-lighter-niagara-1))))
 
    ;; Sh
    `(sh-quoted-exec ((t (:foreground ,gruber-lighter-red+1))))
