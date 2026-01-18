@@ -37,7 +37,7 @@
 
 ;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
-(let ((gruber-light-fg        "#000000")
+(let ((gruber-light-fg        "#333333")
       (gruber-light-fg+1      "gray40")
       (gruber-light-fg+2      "gray80")
       (gruber-light-white     "#000000")
@@ -53,11 +53,10 @@
       (gruber-light-red+1     "#ff4f58") ;; #c63981 H-doc string
       (gruber-light-green     "#008000")
       (gruber-light-yellow-1  "#fffb1a")
-      (gruber-light-yellow    "gold4")
-      ;; (gruber-light-yellow    "#f0ec19")
+      (gruber-light-yellow    "gold4") ;; #f0ec19
       (gruber-light-orange    "#bb5f0c")
       (gruber-light-brown     "#9b3f22")
-      (gruber-light-quartz    "#7b8c84")
+      (gruber-light-quartz    "#586e64") ;; #7b8c84
       (gruber-light-niagara-2 "#326699")
       (gruber-light-niagara-1 "#4d4c80")
       (gruber-light-niagara   "#3333b4") ;; #037581 built-in keyword
