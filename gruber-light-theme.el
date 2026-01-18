@@ -293,7 +293,7 @@
    `(magit-log-author ((t (:foreground ,gruber-light-brown))))
    `(magit-log-head-label-remote ((t ,(list :foreground gruber-light-green
                                             :background gruber-light-bg+1))))
-   `(magit-log-head-label-local ((t ,(list :foreground gruber-light-niagara
+   `(magit-log-head-label-local ((t ,(list :foreground gruber-light-niagara-2
                                            :background gruber-light-bg+1))))
    `(magit-log-head-label-tags ((t ,(list :foreground gruber-light-yellow
                                           :background gruber-light-bg+1))))
