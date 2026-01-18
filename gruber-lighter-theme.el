@@ -57,7 +57,7 @@
       (gruber-lighter-brown     "#9b3f22")
       (gruber-lighter-quartz    "#586e64") ;; #7b8c84
       (gruber-lighter-niagara-2 "#326699")
-      (gruber-lighter-niagara-1 "#4d4c80")
+      (gruber-lighter-niagara-1 "#5b5bb5")
       (gruber-lighter-niagara   "#3333b4") ;; #037581 built-in keyword
       (gruber-lighter-wisteria  "#746b99")
       )
