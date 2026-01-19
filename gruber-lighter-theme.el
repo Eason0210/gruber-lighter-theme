@@ -343,8 +343,8 @@
    `(org-table ((t (:foreground ,gruber-lighter-wisteria))))
 
    ;; Search
-   `(isearch ((t ,(list :foreground gruber-lighter-white
-                        :background gruber-lighter-wheat))))
+   `(isearch ((t ,(list :foreground gruber-lighter-black
+                        :background gruber-lighter-yellow-1))))
    `(isearch-fail ((t ,(list :foreground gruber-lighter-white
                              :background gruber-lighter-red))))
    `(lazy-highlight ((t ,(list
