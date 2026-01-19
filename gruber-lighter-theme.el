@@ -38,10 +38,10 @@
 ;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
 (let ((gruber-lighter-fg         "#333333")
-      (gruber-lighter-fg+1       "gray40")
-      (gruber-lighter-fg+2       "gray80")
-      (gruber-lighter-white      "#ffffff")
+      (gruber-lighter-fg-1       "gray40")
+      (gruber-lighter-fg-2       "gray80")
       (gruber-lighter-black      "#000000")
+      (gruber-lighter-white      "#ffffff")
       (gruber-lighter-bg-1       "#e9e9e9")
       (gruber-lighter-bg         "#ededec")
       (gruber-lighter-bg+1       "#e0e0e0")
@@ -190,7 +190,7 @@
    `(font-lock-reference-face ((t (:foreground ,gruber-lighter-quartz))))
    `(font-lock-string-face ((t (:foreground ,gruber-lighter-green))))
    `(font-lock-type-face ((t (:foreground ,gruber-lighter-quartz+1))))
-   `(font-lock-variable-name-face ((t (:foreground ,gruber-lighter-fg+1))))
+   `(font-lock-variable-name-face ((t (:foreground ,gruber-lighter-fg-1))))
    `(font-lock-warning-face ((t (:foreground ,gruber-lighter-red))))
 
    ;; Flymake
@@ -347,7 +347,7 @@
    `(isearch-fail ((t ,(list :foreground gruber-lighter-white
                              :background gruber-lighter-red))))
    `(lazy-highlight ((t ,(list
-                          :foreground gruber-lighter-fg+2
+                          :foreground gruber-lighter-fg-2
                           :background gruber-lighter-niagara-1))))
 
    ;; Sh
