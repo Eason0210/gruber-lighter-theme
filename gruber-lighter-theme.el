@@ -54,7 +54,8 @@
       (gruber-lighter-red        "#d02324")
       (gruber-lighter-red+1      "#aa0000")
       (gruber-lighter-green      "#008000")
-      (gruber-lighter-yellow     "gold4") ;; #f0ec19
+      (gruber-lighter-yellow-1   "#f0ec19")
+      (gruber-lighter-yellow     "gold4")
       (gruber-lighter-orange     "#bb5f0c")
       (gruber-lighter-brown      "#9b3f22")
       (gruber-lighter-quartz     "#586e64")
