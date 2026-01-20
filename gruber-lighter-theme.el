@@ -280,7 +280,7 @@
 
    ;; line numbers
    `(line-number ((t (:inherit default :foreground ,gruber-lighter-bg+4))))
-   `(line-number-current-line ((t (:inherit line-number :foreground ,gruber-lighter-yellow))))
+   `(line-number-current-line ((t (:inherit line-number :foreground ,gruber-lighter-yellow :bold t))))
 
    ;; Linum
    `(linum ((t `(list :foreground gruber-lighter-quartz
