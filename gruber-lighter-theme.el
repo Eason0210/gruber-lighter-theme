@@ -49,7 +49,7 @@
       (gruber-lighter-bg+3       "#b8bcc0")
       (gruber-lighter-bg+4       "#a8a8a8")
       (gruber-lighter-wheat      "#fee0b8")
-      (gruber-lighter-Red-violet "#c73a82") ;; Python decorators or triple string,Here-doc string
+      (gruber-lighter-Red-violet "#c73a82")
       (gruber-lighter-red-1      "#f43841")
       (gruber-lighter-red        "#d02324")
       (gruber-lighter-red+1      "#aa0000")
