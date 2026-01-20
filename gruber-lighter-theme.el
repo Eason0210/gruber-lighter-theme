@@ -29,7 +29,7 @@
 ;;; Commentary:
 ;;
 ;; Gruber Lighter color theme for Emacs.
-;; A lighter variant of the Gruber Dark theme for BBEdit by John Gruber.
+;; A lighter variant of the Gruber Light theme for BBEdit by John Gruber.
 ;; Adapted for deftheme and extended by Eason Huang.
 
 (deftheme gruber-lighter
