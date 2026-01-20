@@ -38,8 +38,8 @@
 ;; Please, install rainbow-mode.
 ;; Colors with +x are lighter. Colors with -x are darker.
 (let ((gruber-lighter-fg         "#333333")
-      (gruber-lighter-fg-1       "gray40")
-      (gruber-lighter-fg-2       "gray80")
+      (gruber-lighter-fg-1       "#666666")
+      (gruber-lighter-fg-2       "#cccccc")
       (gruber-lighter-black      "#000000")
       (gruber-lighter-white      "#ffffff")
       (gruber-lighter-bg-1       "#e9e9e9")
@@ -55,7 +55,7 @@
       (gruber-lighter-red+1      "#aa0000")
       (gruber-lighter-green      "#008000")
       (gruber-lighter-yellow-1   "#f0ec19")
-      (gruber-lighter-yellow     "gold4")
+      (gruber-lighter-yellow     "#8b7500")
       (gruber-lighter-orange     "#bb5f0c")
       (gruber-lighter-brown      "#9b3f22")
       (gruber-lighter-quartz     "#586e64")
