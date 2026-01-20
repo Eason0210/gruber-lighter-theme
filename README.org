@@ -23,3 +23,5 @@ Or with use-package:
   :load-path "/path/to/gruber-lighter-theme"
   :config (load-theme 'gruber-lighter t))
 #+end_src
+
+* Related dark theme: [[https://github.com/Eason0210/gruber-darker-theme][gruber-darker-theme]].
