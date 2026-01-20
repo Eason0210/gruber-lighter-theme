@@ -24,4 +24,5 @@ Or with use-package:
   :config (load-theme 'gruber-lighter t))
 #+end_src
 
-** Related dark theme: [[https://github.com/Eason0210/gruber-darker-theme][gruber-darker-theme]].
+** Related dark variant
+ 1. [[https://github.com/Eason0210/gruber-darker-theme][gruber-darker-theme]]
