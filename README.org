@@ -1,5 +1,9 @@
 #+title: Gruber Lighter
 Gruber Lighter theme for Emacs.	A lighter variant of the [[http://daringfireball.net/projects/bbcolors/schemes/][Gruber Light]] theme for BBEdit by John Gruber. Adapted for deftheme and extended by Eason Huang.
+
+** Screenshot
+#+html: <img src="https://imgur.com/6c0IGnT.png">
+
 ** Installation
 Download the theme to your local directory. You can do it through ~git clone~ command:
 
