@@ -29,4 +29,5 @@ Or with use-package:
 #+end_src
 
 ** Related dark variant
- 1. [[https://github.com/Eason0210/gruber-darker-theme][gruber-darker-theme]]
+ 1. [[https://github.com/rexim/gruber-darker-theme][gruber-darker-theme by rexim]]
+ 2. [[https://github.com/Eason0210/gruber-darker-theme][gruber-darker-theme]]
