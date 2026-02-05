@@ -499,6 +499,11 @@
    `(outline-7 ((t (:foreground ,gruber-lighter-niagara))))
    `(outline-8 ((t (:foreground ,gruber-lighter-green))))
 
+   ;; Window-divider (built-in)
+   `(window-divider ((t (:foreground ,gruber-lighter-bg+3))))
+   `(window-divider-first-pixel ((t (:foreground ,gruber-lighter-bg+3))))
+   `(window-divider-last-pixel ((t (:foreground ,gruber-lighter-bg+3))))
+
    ;; Rainbow-delimiters (borrowed from `leuven-theme')
    `(rainbow-delimiters-depth-1-face ((t (:foreground "#707183"))))
    `(rainbow-delimiters-depth-2-face ((t (:foreground "#7388D6"))))
