@@ -450,9 +450,11 @@
    `(orderless-match-face-3 ((t (:foreground ,gruber-lighter-quartz))))
 
    ;; diff-hl
-   `(diff-hl-insert ((t (:inherit diff-added))))
-   `(diff-hl-change ((t (:background unspecified :foreground ,gruber-lighter-niagara))))
-   `(diff-hl-delete ((t (:inherit diff-removed))))
+   `(diff-hl-insert ((t (:background ,gruber-lighter-green :foreground ,gruber-lighter-bg))))
+   `(diff-hl-change ((t (:background ,gruber-lighter-niagara-1 :foreground ,gruber-lighter-bg))))
+   `(diff-hl-delete ((t (:background ,gruber-lighter-red :foreground ,gruber-lighter-bg))))
+   `(diff-hl-dired-ignored ((t (:inherit dired-ignored :background ,gruber-lighter-bg+2))))
+   `(diff-hl-dired-unknown ((t (:inherit diff-hl-dired-ignored))))
 
    ;; breadcrumb
    `(breadcrumb-face ((t (:background ,gruber-lighter-bg+1 :foreground ,gruber-lighter-fg))))
